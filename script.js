@@ -17,9 +17,9 @@ async function getCityWeather(cityName){
   const data= await response.json();
   console.log(data);
   cardObject.innerHTML=` <div class="part-1">
-<div id="temp">${data.main.temp}</div>
+<div id="temp">${data.main.temp}°</div>
 <div>
-<div id="range">H:${data.main.temp_max} L:${data.main.temp_min}</div>
+<div id="range">H:${data.main.temp_max}°  L:${data.main.temp_min}°</div>
 <div id="city">${data.name}</div>
 </div>
 </div>
